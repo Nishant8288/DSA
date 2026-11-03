@@ -1,0 +1,17 @@
+// Name: ____________________   Roll No: ____________
+// Assignment 12: Recursive Factorial, Sum and Power
+// Task 3: Recursive power
+
+
+public class Main {
+    static int power(int base, int exp) {
+        if (exp == 0) {
+            return 1;
+        }
+        return base * power(base, exp - 1);
+    }
+
+    public static void main(String[] args) {
+        System.out.println(power(2, 5));
+    }
+}
